@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/05 18:45:34 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/17 22:35:43 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/21 21:53:18 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,8 +64,8 @@ char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 t_list				*ft_lstnew(void	*cont);
-void				ft_lstadd_front(t_list **lst, t_list *new);
-void				ft_lstadd_back(t_list **lst, t_list *new);
+void				ft_lstadd_front(t_list **lst, t_list *newe);
+void				ft_lstadd_back(t_list **lst, t_list *newe);
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
 void				ft_lstclear(t_list **lst, void (*del)(void *));
