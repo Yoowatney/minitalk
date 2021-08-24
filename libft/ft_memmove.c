@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/06 16:13:53 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/12 13:20:52 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:35:25 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ void	*ft_memmove(void *dest, const void *src, size_t num)
 	{
 		while (num)
 		{
-			*((unsigned char *)dest + num - 1) =
-				*((unsigned char *)src + num - 1);
+			*((unsigned char *)dest + num - 1)
+				= *((unsigned char *)src + num - 1);
 			num--;
 		}
 	}

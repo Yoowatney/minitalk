@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/09 22:37:49 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/17 17:04:37 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:31:39 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *ptr1, const char *ptr2, size_t num)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < num)

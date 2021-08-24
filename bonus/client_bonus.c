@@ -6,13 +6,13 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 19:51:14 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/08/22 01:08:02 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:20:50 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk_bonus.h"
 
-int		send(int pid, char *msg)
+int	send(int pid, char *msg)
 {
 	char	idx;
 
@@ -35,7 +35,7 @@ int		send(int pid, char *msg)
 
 void	send_num(int pid, unsigned int num)
 {
-	int idx;
+	int	idx;
 
 	idx = 8;
 	while (idx)
@@ -58,10 +58,9 @@ void	success(int sig)
 	ft_putstr_fd("\nReceived a signal\n", 1);
 }
 
-
-int		main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
-	int pid;
+	int	pid;
 
 	signal(SIGUSR1, success);
 	if (argc != 3)
@@ -78,4 +77,3 @@ int		main(int argc, char *argv[])
 	}
 	return (0);
 }
-

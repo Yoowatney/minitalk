@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 19:13:37 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/14 22:33:36 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:35:03 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *source, size_t num)
 {
-	unsigned long i;
+	unsigned long	i;
 
 	i = 0;
 	if (!dest && !source)

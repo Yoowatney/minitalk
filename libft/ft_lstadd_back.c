@@ -6,13 +6,13 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:18:22 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/14 22:30:06 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:36:01 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*ptr;
 

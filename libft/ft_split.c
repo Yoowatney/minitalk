@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 22:31:07 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/21 13:12:39 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:33:39 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static	void	ft_strncpy(char *src, int n, char *dest)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < n)
@@ -27,7 +27,7 @@ static	void	ft_strncpy(char *src, int n, char *dest)
 
 static	void	one_free(char **ret, int row)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < row)
@@ -35,9 +35,9 @@ static	void	one_free(char **ret, int row)
 	return ;
 }
 
-static	int		split_sub(char **ret, char *str, char c, int row)
+static	int	split_sub(char **ret, char *str, char c, int row)
 {
-	char *first;
+	char	*first;
 
 	while (*str)
 	{
@@ -62,9 +62,9 @@ static	int		split_sub(char **ret, char *str, char c, int row)
 	return (1);
 }
 
-int				count_word(char *str, int c)
+int	count_word(char *str, int c)
 {
-	int cnt;
+	int	cnt;
 
 	cnt = 0;
 	while (*str)
@@ -81,7 +81,7 @@ int				count_word(char *str, int c)
 	return (cnt);
 }
 
-char			**ft_split(char const *str, char c)
+char	**ft_split(char const *str, char c)
 {
 	char	**ret;
 	int		row;
@@ -90,7 +90,8 @@ char			**ft_split(char const *str, char c)
 	if (!str)
 		return (0);
 	row = 0;
-	if (!(ret = (char **)malloc(sizeof(char *) * (count_word((char *)str, c) + 1))))
+	ret = (char **)malloc(sizeof(char *) * (count_word((char *)str, c) + 1));
+	if (ret == NULL)
 		return (NULL);
 	if (split_sub(ret, (char *)str, c, row) == 0)
 	{

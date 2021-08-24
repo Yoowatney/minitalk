@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/06 13:44:38 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/06 15:48:02 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:34:59 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < num)

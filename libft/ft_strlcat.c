@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/09 16:09:42 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/14 22:33:50 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:31:10 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t i;
-	size_t dst_len;
+	size_t	i;
+	size_t	dst_len;
 
 	i = 0;
 	dst_len = ft_strlen(dst);

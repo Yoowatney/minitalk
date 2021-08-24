@@ -6,20 +6,18 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 23:40:48 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/08/21 22:26:54 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:26:33 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk_bonus.h"
 
-
 void	handler(int sig, siginfo_t *info, void *context)
 {
-	static	t_buf	buf;
+	static t_buf	buf;
 
 	buf.c = buf.c << 1;
 	buf.i++;
-
 	(void)context;
 	(void)info;
 	if (sig == SIGUSR1)
@@ -35,19 +33,19 @@ void	handler(int sig, siginfo_t *info, void *context)
 	}
 }
 
-void		display_pid()
+void	display_pid(void)
 {
 	ft_putstr_fd("Server PID :", 1);
 	ft_putnbr_fd(getpid(), 1);
 	ft_putstr_fd("\n", 1);
 }
 
-int		main(void)
+int	main(void)
 {
-    struct sigaction	act;
+	struct sigaction	act;
 
 	act.sa_sigaction = handler;
-    act.sa_flags = SA_SIGINFO;
+	act.sa_flags = SA_SIGINFO;
 	display_pid();
 	if (sigaction(SIGUSR1, &act, NULL) == -1)
 	{

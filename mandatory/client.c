@@ -6,13 +6,13 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 19:51:14 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/08/23 14:55:30 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:27:36 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-int		send(int pid, char *msg)
+int	send(int pid, char *msg)
 {
 	char	idx;
 
@@ -33,10 +33,9 @@ int		send(int pid, char *msg)
 	return (1);
 }
 
-
-int		main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
-	int pid;
+	int	pid;
 
 	if (argc != 3)
 	{
@@ -51,4 +50,3 @@ int		main(int argc, char *argv[])
 	}
 	return (0);
 }
-

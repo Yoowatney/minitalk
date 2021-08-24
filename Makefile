@@ -6,7 +6,7 @@
 #    By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 23:07:54 by yoyoo             #+#    #+#              #
-#    Updated: 2021/08/24 17:24:02 by yoyoo            ###   ########.fr        #
+#    Updated: 2021/08/24 23:50:11 by yoyoo            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,8 +31,11 @@ B_CLIENT		= client_bonus
 
 
 # mandatory
-all				: $(LIBFT) $(SERVER) $(CLIENT) $(SRCS_DIR)/minitalk.h
+all				: $(LIBFT) $(OBJS_DIR) $(SERVER) $(CLIENT) $(SRCS_DIR)/minitalk.h
 	@rm -f server_bonus.o client_bonus.o
+
+$(OBJS_DIR)     :
+	@mkdir $(OBJS_DIR)
 
 vpath %.c $(SRCS_DIR)
 
@@ -52,7 +55,7 @@ $(CLIENT)       : $(OBJS_DIR)/client.o $(OBJS_DIR)/utils.o
 
 
 # bonus
-bonus          : $(LIBFT) $(B_SERVER) $(B_CLIENT) $(B_SRCS_DIR)/minitalk_bonus.h
+bonus          : $(LIBFT) $(OBJS_DIR) $(B_SERVER) $(B_CLIENT) $(B_SRCS_DIR)/minitalk_bonus.h
 	@printf "   \033[0;32m[Bonus build success🔨]\n\e[0m"
 
 vpath %.c $(B_SRCS_DIR)

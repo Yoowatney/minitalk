@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 23:40:48 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/08/21 22:30:14 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:29:32 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	handler(int sig)
 {
-	static t_buf buf;
+	static t_buf	buf;
 
 	buf.c = buf.c << 1;
 	buf.i++;
@@ -28,14 +28,14 @@ void	handler(int sig)
 	}
 }
 
-void		display_pid(void)
+void	display_pid(void)
 {
 	ft_putstr_fd("Server PID :", 1);
 	ft_putnbr_fd(getpid(), 1);
 	ft_putstr_fd("\n", 1);
 }
 
-int		main(void)
+int	main(void)
 {
 	struct sigaction	act;
 

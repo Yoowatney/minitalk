@@ -6,16 +6,16 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 16:09:50 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/17 16:23:13 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:37:50 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int		int_len(int n)
+static	int	int_len(int n)
 {
-	int cnt;
-	int fix;
+	int	cnt;
+	int	fix;
 
 	fix = n;
 	cnt = 0;
@@ -40,7 +40,7 @@ static	void	fill_ret(char *ret, int n, int size)
 	}
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*ret;
 	int		size;

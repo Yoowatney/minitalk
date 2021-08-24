@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/05 18:30:26 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/10 19:07:17 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:38:05 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *ptr, size_t n)
 {
-	unsigned long i;
+	unsigned long	i;
 
 	i = 0;
 	while (i < n)

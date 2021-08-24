@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/11 17:50:58 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/05/17 16:28:26 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/24 23:34:06 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static	void	rec(int nb, int fd)
 {
-	char c;
+	char	c;
 
 	if (nb < 0)
 	{
@@ -28,7 +28,7 @@ static	void	rec(int nb, int fd)
 	write(fd, &c, 1);
 }
 
-void			ft_putnbr_fd(int nb, int fd)
+void	ft_putnbr_fd(int nb, int fd)
 {
 	if (nb == 0)
 		write(fd, "0", 1);
