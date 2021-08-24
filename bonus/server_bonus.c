@@ -6,16 +6,17 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 23:40:48 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/08/21 21:15:11 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/21 22:26:54 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk_bonus.h"
 
-static	t_buf	buf;
 
 void	handler(int sig, siginfo_t *info, void *context)
 {
+	static	t_buf	buf;
+
 	buf.c = buf.c << 1;
 	buf.i++;
 

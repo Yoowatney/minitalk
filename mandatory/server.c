@@ -6,7 +6,7 @@
 /*   By: yoyoo <yoyoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 23:40:48 by yoyoo             #+#    #+#             */
-/*   Updated: 2021/08/21 21:21:53 by yoyoo            ###   ########.fr       */
+/*   Updated: 2021/08/21 22:30:14 by yoyoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	handler(int sig)
 	}
 }
 
-void		display_pid()
+void		display_pid(void)
 {
 	ft_putstr_fd("Server PID :", 1);
 	ft_putnbr_fd(getpid(), 1);
